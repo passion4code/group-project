@@ -8,7 +8,7 @@ function setupSpotify () {
     $.ajax({
         url: 'https://accounts.spotify.com/api/token',
         headers: {
-         'Authorization': 'Basic ' + btoa( 11061422aa1046b9ab9b1c6eb0193619 + ":" + cfa323c2f0414388a8538fd11aa57206) //client ID and client secret from Spotify for Dev Dashboard
+         'Authorization': 'Basic ' + btoa( "11061422aa1046b9ab9b1c6eb0193619" + ":" + "cfa323c2f0414388a8538fd11aa57206") //client ID and client secret from Spotify for Dev Dashboard
        }
        }).success(function(response) {
        // Your token will be in response.access_token
