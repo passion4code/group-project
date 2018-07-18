@@ -209,3 +209,7 @@ body {
   .player-list li:last-child {
     margin-bottom: 0;
   }
+
+  .ul {
+    list-style-type: none;
+  }
