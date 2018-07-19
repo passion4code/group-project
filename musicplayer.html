@@ -7,6 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style.css">
+  
 </head>
 
 <html>
@@ -23,27 +24,27 @@
               <li>
                 <img class="list-cover" src="assets/images/bigsean.png" />
                   <div class="list-info">
-                    <div class="info-title">Big Sean</div>
+                    <div class="info-title" data-author='bigsean'>Big Sean</div>
                       
                     </div>
               </li>
               <li>
                 <img class="list-cover" src="assets/images/jeremih.jpg" />
                   <div class="list-info">
-                    <div class="info-title">Jeremih</div>
+                    <div class="info-title" data-author='jermih'>Jeremih</div>
                   </div>
               </li>
               <li>
                 <img class="list-cover" src="assets/images/jcole.jpg" />
                   <div class="list-info">
                       
-                    <div class="info-title">J Cole</div>
+                    <div class="info-title" data-author='jcole'>J Cole</div>
                   </div>
               </li>
               <li>
                 <img class="list-cover" src="assets/images/2chainz.jpg"/>
                   <div class="list-info">
-                    <div class="info-title">2 Chainz</div>
+                    <div class="info-title" data-author='2chainz'>2 Chainz</div>
                   </div>
               </li>
             </ul>
@@ -52,32 +53,8 @@
         <!-- MAKE THIS ARTISTS SONGS -->
         <div id="song" class="col-lg-6">
           <h4> Related Artist's Songs</h4>
-            <ul class="player-list">
-              <li>
-                <img class="list-cover" src="assets/images/bigsean.png" />
-                  <div class="list-info">
-                    <iframe src="https://open.spotify.com/embed/track/5NkfVQS8BkceRgoSQwcW6H" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                          
-                  </div>
-              </li>
-              <li>
-                <img class="list-cover" src="assets/images/bigsean.png"/>
-                  <div class="list-info">
-                    <iframe src="https://open.spotify.com/embed/track/0SGkqnVQo9KPytSri1H6cF" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                  </div>
-              </li>
-              <li>
-                <img class="list-cover" src="assets/images/bigsean.png"/>
-                  <div class="list-info">
-                    <iframe src="https://open.spotify.com/embed/track/7FYH5AW3bVfZHJIQpq3UOA" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                  </div>
-              </li>
-              <li>
-                <img class="list-cover" src="assets/images/bigsean.png" />
-                  <div class="list-info">
-                    <iframe src="https://open.spotify.com/embed/track/1jQsKN68yE94tMYml0wHMd" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                  </div>
-              </li>
+            <ul class="player-list related-artist-player-list">
+             <!-- will get populated by javascript -->
             </ul>
         </div>
       </div>
@@ -93,8 +70,8 @@
           
     </div>
 
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
       <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady">   </script>
-  
+      <script src='assets/js/musicplayer.js'></script>
   </body>
 </html>
