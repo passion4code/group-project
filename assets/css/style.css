@@ -251,5 +251,8 @@ body {
        
   .container.text-center {
     padding-top: 200px;
+  }
 
+  .ul {
+    list-style-type: none;
   }
